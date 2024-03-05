@@ -4,7 +4,7 @@ Use App\Http\Controllers\HomeBarangController;
 Use App\Http\Controllers\ListBarangController;
 Use App\Http\Controllers\BioskopController;
 use Illuminate\Support\Facades\Route;
-
+Use App\Http\Controllers\BioskopKontroler;
 
 
 Route::get('/', [HomeController::class,'index']);
@@ -39,3 +39,4 @@ Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']
 Route::get('/login', [BioskopController::class, 'login']);
 Route::get('/dashboard', [BioskopController::class, 'dashboard']);
 Route::get('/listbioskop', [BioskopController::class, 'listbioskop']);
+Route::get('/bioskop_view', [BioskopKontroler::class, 'tampilkan']);
