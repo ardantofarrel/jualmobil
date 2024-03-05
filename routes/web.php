@@ -1,8 +1,9 @@
 <?php
 
-Use App\Http\Controllers\HomeBarangController;
+Use App\Http\Controllers\HomeController;
 Use App\Http\Controllers\ListBarangController;
 Use App\Http\Controllers\BioskopController;
+Use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\BioskopKontroler;
 
@@ -40,3 +41,8 @@ Route::get('/login', [BioskopController::class, 'login']);
 Route::get('/dashboard', [BioskopController::class, 'dashboard']);
 Route::get('/listbioskop', [BioskopController::class, 'listbioskop']);
 Route::get('/bioskop_view', [BioskopKontroler::class, 'tampilkan']);
+
+
+// Mazanda Task
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'register']);
