@@ -4,6 +4,7 @@ Use App\Http\Controllers\HomeController;
 Use App\Http\Controllers\ListBarangController;
 Use App\Http\Controllers\BioskopController;
 Use App\Http\Controllers\AuthController;
+Use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\BioskopKontroler;
 
@@ -46,3 +47,6 @@ Route::get('/bioskop_view', [BioskopKontroler::class, 'tampilkan']);
 // Mazanda Task
 Route::get('/login', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'register']);
+
+// Farrel Task
+Route::get('/dashboard', [DashboardController::class, 'dashboard']);
