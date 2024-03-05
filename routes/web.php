@@ -1,8 +1,9 @@
 <?php
 
-Use App\Http\Controllers\HomeBarangController;
+Use App\Http\Controllers\HomeController;
 Use App\Http\Controllers\ListBarangController;
 Use App\Http\Controllers\BioskopController;
+Use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -39,3 +40,8 @@ Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']
 Route::get('/login', [BioskopController::class, 'login']);
 Route::get('/dashboard', [BioskopController::class, 'dashboard']);
 Route::get('/listbioskop', [BioskopController::class, 'listbioskop']);
+
+
+// Mazanda Task
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'register']);
