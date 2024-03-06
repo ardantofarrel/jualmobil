@@ -9,6 +9,7 @@ Use App\Http\Controllers\dashboardadmin;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\BioskopKontroler;
 use App\Http\Controllers\etiket;
+use App\Http\Controllers\pembayarancontroller;
 
 
 Route::get('/', [HomeController::class,'index']);
@@ -58,3 +59,6 @@ Route::get('/dashboardadmin', [dashboardadmin::class, 'dashboardadmin']);
 
 //e-tiket
 Route::get('/e-tiket', [etiket::class, 'etiket']);
+
+//e-tiket
+Route::get('/pembayaran', [pembayarancontroller::class, 'pembayaran']);
