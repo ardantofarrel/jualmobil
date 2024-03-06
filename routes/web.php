@@ -8,6 +8,7 @@ Use App\Http\Controllers\DashboardController;
 Use App\Http\Controllers\dashboardadmin;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\BioskopKontroler;
+use App\Http\Controllers\etiket;
 
 
 Route::get('/', [HomeController::class,'index']);
@@ -54,3 +55,6 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 
 // Faron Task
 Route::get('/dashboardadmin', [dashboardadmin::class, 'dashboardadmin']);
+
+//e-tiket
+Route::get('/e-tiket', [etiket::class, 'etiket']);
