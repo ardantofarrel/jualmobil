@@ -5,6 +5,7 @@ Use App\Http\Controllers\ListBarangController;
 Use App\Http\Controllers\BioskopController;
 Use App\Http\Controllers\AuthController;
 Use App\Http\Controllers\DashboardController;
+Use App\Http\Controllers\dashboardadmin;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\BioskopKontroler;
 
@@ -50,3 +51,6 @@ Route::get('/register', [AuthController::class, 'register']);
 
 // Farrel Task
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+
+// Faron Task
+Route::get('/dashboardadmin', [dashboardadmin::class, 'dashboardadmin']);
