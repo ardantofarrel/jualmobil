@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\BioskopKontroler;
 use App\Http\Controllers\etiket;
 use App\Http\Controllers\pembayarancontroller;
+use App\Http\Controllers\profilcontroller;
+
 
 
 Route::get('/', [HomeController::class,'index']);
@@ -62,3 +64,6 @@ Route::get('/e-tiket', [etiket::class, 'etiket']);
 
 //e-tiket
 Route::get('/pembayaran', [pembayarancontroller::class, 'pembayaran']);
+
+// profil
+Route::get('/profil', [profilController::class, 'profil']);
