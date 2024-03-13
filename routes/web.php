@@ -11,6 +11,8 @@ Use App\Http\Controllers\BioskopKontroler;
 use App\Http\Controllers\etiket;
 use App\Http\Controllers\pembayarancontroller;
 use App\Http\Controllers\profilcontroller;
+use App\Http\Controllers\now_playing;
+use App\Http\Controllers\up_coming;
 
 
 
@@ -67,3 +69,7 @@ Route::get('/pembayaran', [pembayarancontroller::class, 'pembayaran']);
 
 // profil
 Route::get('/profil', [profilController::class, 'profil']);
+
+Route::get('/nowplaying', [now_playing::class, 'nowplaying']);
+
+Route::get('/upcoming', [up_coming::class, 'upcoming']);
