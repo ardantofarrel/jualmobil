@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class dashboardadmin extends Controller
 {
     public function dashboardadmin(){
-        return view('Faron.dahboardadmin');
+        return view('dahboardadmin');
     }
 }
