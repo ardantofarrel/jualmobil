@@ -13,11 +13,9 @@ use App\Http\Controllers\pembayarancontroller;
 use App\Http\Controllers\profilcontroller;
 use App\Http\Controllers\now_playing;
 use App\Http\Controllers\up_coming;
+use App\Http\Controllers\indexcontroller;
 
 
-
-Route::get('/', [HomeController::class,'index']);
-Route::get('contact', [HomeController::class,'contact']);
 
 // routes/web.php
 
@@ -43,7 +41,6 @@ Route::prefix('admin')->group(function () {
     // return view('list_barang', compact('id', 'nama'));
 // });
 
-Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
 
 Route::get('/login', [BioskopController::class, 'login']);
 Route::get('/dashboard', [BioskopController::class, 'dashboard']);
@@ -73,3 +70,5 @@ Route::get('/profil', [profilController::class, 'profil']);
 Route::get('/nowplaying', [now_playing::class, 'nowplaying']);
 
 Route::get('/upcoming', [up_coming::class, 'upcoming']);
+
+Route::get('/index', [indexcontroller::class, 'index']);
